@@ -1,0 +1,429 @@
+/* General */
+body {
+    font-family: "Arial", Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #5ca05d;
+
+    
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Container for flexboxes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create 3 equal columns */
+.column {
+  flex: 33.33%;
+  padding: 20px;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 100%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Top Navigation */
+.topnav {
+    overflow: hidden;
+    background-color: #1d651e;
+    font-family: "Arial", Helvetica, sans-serif;
+    padding-left: 36%;
+    padding-bottom: 20px;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.topnav a:hover {
+    background-color: #c0d8a8;
+    color: #1d651e;
+    transition: 0.5s;
+
+}
+
+.topnav a.active {
+    background-color: white;
+    color: #1d651e;
+}
+
+/* Brand CEITE */
+.brand {
+    overflow: hidden;
+    text-align: center;
+    background-color: #1d651e;
+}
+
+.logo {
+    padding-left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+  text-align: center;
+  background-color: #1d651e;
+  color: #FFFFFF;
+  padding-bottom: 40px;
+  margin: 0%;
+}
+h2 {
+  text-align: center;
+  background-color: #1d651e;
+  color: #FFFFFF;
+  padding: 40px;
+  margin: 0%;
+}
+
+
+
+/*body {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    font-size: 20px;
+    color: #222;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.nav-wrapper {
+    display: flex; 
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #bfbbc5;
+}
+
+.left-side {
+    display: flex;
+}
+
+
+.img {
+    vertical-align: middle;
+    border-style: none;
+    max-width: 50%;
+    max-height 50%;
+    padding-top: 0px;
+    padding-left: 70px;
+}
+    
+.right-side {
+    display: flex;
+}
+
+.nav-wrapper > .right-side > div {
+    margin-right: 30px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+.active-nav-link {
+    border-bottom: 2px solid black;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+*/
+
+/*.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.img {
+    vertical-align: middle;
+    border-style: none;
+    max-width: 50%;
+    max-height 50%;
+    padding-top: 0px;
+    padding-left: 70px;
+}*/
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 280px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: #1d651e;
+    border: 6px solid #1d651e;
+    background-color: #c0d8a8;
+}
+
+.img-text-wrapper {
+    font-family: "Arial", Helvetica, sans-serif;
+    position: absolute;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-weight: 700;
+    font-size: 25px;
+    background-color: #1d651e;
+
+}
+
+
+  a:link    { color: white; text-decoration: none; }
+  a:visited { color: white; text-decoration: none; }
+  a:hover   { color: #5ca05d; text-decoration: none; transition: 0.5s; }
+  a:active  { color: white; text-decoration: none; }
+
+.img-text-wrapper .subtitle {
+    font-family: "Arial", Helvetica, sans-serif;
+    transition: 0.5s;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-family: "Arial", Helvetica, sans-serif;
+    font-weight: 900;
+    color: #bfbbc5;
+    transform: scale(1.25);
+
+}
+
+.img-darken {
+    transition: 0.5s;
+    filter: blur(5px);
+}
+
+/* Collapsible */
+
+.collapsible {
+  background-color: #5ca05d;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+  transition: 0.5s;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+
+
+
+
+.botnav {
+  overflow: hidden;
+  background-color: #1d651e;
+}
+
+.botnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.botnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.botnav a.active {
+  background-color: #1d651e;
+  color: #1d651e;
+}
+
+.botnav input[type=text] {
+  float: left;
+  padding-left: 6px;
+  border: 8;
+  margin-top: 20px;
+  margin-right: 16px;
+  margin-left: 8px;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+  .botnav a, .botnav input[type=text] {
+    float: none;
+    display: inherit;
+    text-align: center;
+    width: 25%;
+    margin-left: 36.5%;
+    padding: 14px;
+  }
+  .botnav input[type=text] {
+    border: 5px solid #1d651e;
+  }
+
+.footer {
+    font-family: "Arial", Helvetica, sans-serif;
+    color: #FFFFFF;
+    border-color: #4c4754;
+    text-align: center;
+    font-size: 18px;
+    line-height: 100px;
+    background-color: #1d651e;
+    font-weight: bold;
+        }
+ 
+/* Mission Css coding */      
+/* split section */
+.split-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.split-section-image {
+  flex: 50%;
+}
+
+.split-section-text {
+  flex: 50%;
+  align-items: flex-start;
+  background-color: #5ca05d;
+
+}
+
+.split-section-image img {
+  width: 100%;
+  height: auto;
+}
+
+.split-section-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  vertical-align: top;
+}
+
+.split-section-text p {
+  font-size: 16px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Code for Carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.carousel-container {
+  width: 100%; 
+  overflow: hidden;
+  margin: 0 auto; 
+}
+
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 20%; 
+  height: 200px; 
+  object-fit: cover; 
+}
+
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+
+
+
